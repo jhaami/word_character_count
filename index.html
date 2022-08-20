@@ -35,26 +35,20 @@
             font-weight: bold;
         }
         /* media query */
-        @media(max-width:500px){
-            h1{
-                font-size: 16px;
-                text-align: left;
-                padding: 15px 3px;
-                width: 99%;
+        @media only screen and (max-width:768px){
+           
+            body{
+                padding: 50px 0px;
             }
-            p{
-                font-size: 16px;
-                text-align: left;
-                width: 99%;
-                padding: 7px 3px;
-                color: #fff;
-            }
-            span{
-                /* color: #000000; */
+        }
+            @media(max-width:375px){
+                h1{
+                    font-size: 26px;
+                    font-weight: bold;
+                }
+
             }
            
-
-        }
     </style>
 </head>
 <body>
@@ -65,6 +59,7 @@
         <span id="word">0 </span> word and
         <span id="char">0 </span> character
     </p>
+    <h2>ThankYou</h2>
     <script>
         let textbox=document.getElementById("textbox");
 
